@@ -12,8 +12,6 @@ import os
 
 bot = commands.Bot(command_prefix = '쪽네야 ')
 
-token = "NzQ1MTUwMTQ5NDk1NjE5NjM3.XztlJw.5l5YHllihKy6nwUc5bOg32Iqzi8"
-
 @bot.event
 async def on_ready():
     print("Bot status :: online")
@@ -84,4 +82,4 @@ async def _search_blog(ctx, *, search_query):
     embed.set_footer(text="검색 완료!")
     await ctx.send(embed=embed)
 
-bot.run(token)
+bot.run(os.environ['token'])
