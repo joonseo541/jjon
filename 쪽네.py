@@ -13,7 +13,7 @@ import os
 client = commands.Bot(command_prefix = '쪽네야 ')
 client.remove_command("help")
 
-token = 'NzQ1MTUwMTQ5NDk1NjE5NjM3.XztlJw.FOSYhq7mtTxwbcS_C_L75CdLP08'
+token = '없다'
 
 @client.event
 async def on_ready():
